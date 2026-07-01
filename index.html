@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <title>Multimedia Blogs | Discover Movies & Entertainment</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <i class="fa-solid fa-film"></i>
+          <span>Multimedia Blogs</span>
+        </div>
+
+        <ul class="nav-links">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="movies.html">Movies</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search Movies..."
+            />
+            <div id="searchResults" class="search-results"></div>
+          </div>
+
+          <button id="themeBtn" class="theme-btn">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <button class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <span class="hero-tag"> #1 Entertainment Platform </span>
+
+        <h1>Experience Cinema Beyond The Screen</h1>
+
+        <p>
+          Explore blockbuster movies, official trailers, entertainment news,
+          blogs and multimedia experiences from around the world.
+        </p>
+
+        <div class="hero-buttons">
+          <button class="primary-btn">
+            <i class="fa-solid fa-play"></i>
+            Explore Movies
+          </button>
+
+          <button class="secondary-btn">
+            <i class="fa-solid fa-circle-info"></i>
+            Learn More
+          </button>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-card">
+            <h2>1000+</h2>
+            <p>Movies</p>
+          </div>
+
+          <div class="stat-card">
+            <h2>500+</h2>
+            <p>Trailers</p>
+          </div>
+
+          <div class="stat-card">
+            <h2>50K+</h2>
+            <p>Users</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TRENDING ================= -->
+
+    <section class="section">
+      <div class="section-header">
+        <h2>🔥 Trending Movies</h2>
+        <a href="movies.html">View All</a>
+      </div>
+
+      <div class="movie-grid" id="trendingMovies"></div>
+    </section>
+
+    <!-- ================= UPCOMING ================= -->
+
+    <section class="section">
+      <div class="section-header">
+        <h2>🎬 Upcoming Releases</h2>
+        <a href="movies.html">View All</a>
+      </div>
+
+      <div class="movie-grid" id="upcomingMovies"></div>
+    </section>
+
+    <!-- ================= POPULAR ================= -->
+
+    <section class="section">
+      <div class="section-header">
+        <h2>⭐ Popular Movies</h2>
+        <a href="movies.html">View All</a>
+      </div>
+
+      <div class="movie-grid" id="popularMovies"></div>
+    </section>
+
+    <!-- ================= OTT ================= -->
+
+    <section class="section">
+      <div class="section-header">
+        <h2>🍿 OTT Exclusives</h2>
+        <a href="movies.html">View All</a>
+      </div>
+
+      <div class="movie-grid" id="ottMovies"></div>
+    </section>
+
+    <!-- ================= FEATURES ================= -->
+
+    <section class="features">
+      <div class="feature-card">
+        <i class="fa-solid fa-video"></i>
+        <h3>Official Trailers</h3>
+        <p>Watch high-quality official movie trailers instantly.</p>
+      </div>
+
+      <div class="feature-card">
+        <i class="fa-solid fa-star"></i>
+        <h3>Ratings & Reviews</h3>
+        <p>Explore audience ratings and reviews before watching.</p>
+      </div>
+
+      <div class="feature-card">
+        <i class="fa-solid fa-robot"></i>
+        <h3>AI Recommendations</h3>
+        <p>Receive smart movie suggestions based on your interests.</p>
+      </div>
+
+      <div class="feature-card">
+        <i class="fa-solid fa-mobile-screen"></i>
+        <h3>Responsive Experience</h3>
+        <p>Enjoy MultimediaHub on desktop, tablet and mobile devices.</p>
+      </div>
+    </section>
+
+    <!-- ================= NEWS ================= -->
+
+    <section class="section">
+      <div class="section-header">
+        <h2>📰 Entertainment News</h2>
+      </div>
+
+      <div class="news-grid">
+        <div class="news-card">
+          <h3>Marvel Announces New Era</h3>
+          <p>Upcoming superhero movies are set to redefine cinema.</p>
+        </div>
+
+        <div class="news-card">
+          <h3>Streaming Growth Continues</h3>
+          <p>OTT platforms dominate modern entertainment consumption.</p>
+        </div>
+
+        <div class="news-card">
+          <h3>AI in Filmmaking</h3>
+          <p>Artificial Intelligence transforms movie production workflows.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BLOGS ================= -->
+
+    <section class="section">
+      <div class="section-header">
+        <h2>📖 Multimedia Blogs</h2>
+        <a href="blogs.html">Read More</a>
+      </div>
+
+      <div class="blog-grid">
+        <div class="blog-card">
+          <h3>The Future of Cinema</h3>
+          <p>How AI and VFX are shaping modern filmmaking.</p>
+        </div>
+
+        <div class="blog-card">
+          <h3>Rise of OTT Platforms</h3>
+          <p>Streaming services continue changing entertainment forever.</p>
+        </div>
+
+        <div class="blog-card">
+          <h3>Virtual Production Revolution</h3>
+          <p>The technology behind today's biggest blockbusters.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NEWSLETTER ================= -->
+
+    <section class="newsletter">
+      <h2>Stay Updated</h2>
+
+      <p>
+        Subscribe to receive the latest movie trailers, reviews and
+        entertainment updates.
+      </p>
+
+      <div class="newsletter-box">
+        <input type="email" placeholder="Enter your email address" />
+
+        <button>Subscribe</button>
+      </div>
+    </section>
+    <body>
+      <!-- HOME PAGE SECTIONS -->
+
+      <section>
+        <h2>🔥 Trending</h2>
+        <div id="trendingMovies"></div>
+      </section>
+
+      <section>
+        <h2>⭐ Popular</h2>
+        <div id="popularMovies"></div>
+      </section>
+
+      <section>
+        <h2>🎬 Upcoming</h2>
+        <div id="upcomingMovies"></div>
+      </section>
+    </body>
+
+    <!-- ===============================
+           TMDB TRAILER MODAL
+    ================================ -->
+
+    <div class="trailer-modal" id="trailerModal">
+      <div class="trailer-content">
+        <span class="close-trailer" id="closeTrailer"> &times; </span>
+
+        <iframe id="trailerFrame" src="" allowfullscreen> </iframe>
+      </div>
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+      <div class="footer-grid">
+        <div>
+          <h3>MultimediaH Blogs</h3>
+          <p>
+            Discover movies, trailers, entertainment news, blogs and multimedia
+            experiences.
+          </p>
+        </div>
+
+        <div>
+          <h3>Quick Links</h3>
+
+          <a href="movies.html">Movies</a>
+          <a href="blogs.html">Blogs</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div>
+          <h3>Follow Us</h3>
+
+          <div class="social-icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-x-twitter"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 MultimediaHub | All Rights Reserved
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+
+    <script src="js/tmdb.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/movies.js"></script>
+  </body>
+</html>

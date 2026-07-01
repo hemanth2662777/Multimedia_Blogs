@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <title>Blogs | Multimedia Blogs</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <i class="fa-solid fa-film"></i>
+          <span>Multimedia Blogs</span>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="movies.html">Movies</a></li>
+          <li><a class="active" href="blogs.html">Blogs</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <button id="themeBtn" class="theme-btn">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ================= HERO ================= -->
+      <section class="blogs-hero">
+        <div class="hero-content">
+          <span class="hero-tag">Entertainment • Technology • Cinema</span>
+
+          <h1>Multimedia Insights & Stories</h1>
+
+          <p>
+            Discover filmmaking, AI, OTT platforms, gaming, animation and future
+            entertainment trends.
+          </p>
+        </div>
+      </section>
+
+      <!-- ================= FEATURED BLOG ================= -->
+      <section class="featured-blog">
+        <div class="featured-image">
+          <img
+            src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80"
+            alt="AI transforming cinema"
+          />
+        </div>
+
+        <div class="featured-content">
+          <span class="blog-category">FEATURED</span>
+
+          <h2>How Artificial Intelligence is Transforming Cinema</h2>
+
+          <p>
+            AI is changing filmmaking through automation, visual effects
+            generation, dubbing systems, editing tools and intelligent
+            recommendations.
+          </p>
+
+          <div class="blog-meta">
+            <span><i class="fa-solid fa-user"></i> Multimedia Team</span>
+            <span><i class="fa-solid fa-clock"></i> 8 min read</span>
+            <span><i class="fa-solid fa-calendar"></i> July 2026</span>
+          </div>
+
+          <button class="primary-btn">Read Article</button>
+        </div>
+      </section>
+
+      <!-- ================= FILTERS ================= -->
+      <section class="blog-filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="cinema">Cinema</button>
+        <button class="filter-btn" data-category="ai">AI</button>
+        <button class="filter-btn" data-category="ott">OTT</button>
+        <button class="filter-btn" data-category="vfx">VFX</button>
+        <button class="filter-btn" data-category="gaming">Gaming</button>
+        <button class="filter-btn" data-category="tech">Technology</button>
+      </section>
+
+      <!-- ================= BLOG GRID ================= -->
+      <section class="section">
+        <div class="blog-grid">
+          <!-- CARD 1 -->
+          <article class="blog-card" data-category="cinema">
+            <img
+              src="https://picsum.photos/500/350?1"
+              alt="Movie trailers evolution"
+            />
+            <div class="blog-content">
+              <span class="category-tag">Cinema</span>
+              <h3>Evolution of Movie Trailers</h3>
+              <p>
+                Trailers evolved into powerful storytelling marketing tools.
+              </p>
+              <div class="blog-footer">
+                <span>5 min read</span>
+                <a href="#">Read More →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 2 -->
+          <article class="blog-card" data-category="vfx">
+            <img src="https://picsum.photos/500/350?2" alt="CGI VFX cinema" />
+            <div class="blog-content">
+              <span class="category-tag">VFX</span>
+              <h3>CGI Revolution in Cinema</h3>
+              <p>How CGI changed modern filmmaking forever.</p>
+              <div class="blog-footer">
+                <span>6 min read</span>
+                <a href="#">Read More →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 3 -->
+          <article class="blog-card" data-category="ott">
+            <img
+              src="https://picsum.photos/500/350?3"
+              alt="OTT streaming platforms"
+            />
+            <div class="blog-content">
+              <span class="category-tag">OTT</span>
+              <h3>Rise of Streaming Platforms</h3>
+              <p>OTT platforms reshaped global entertainment habits.</p>
+              <div class="blog-footer">
+                <span>4 min read</span>
+                <a href="#">Read More →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 4 -->
+          <article class="blog-card" data-category="ai">
+            <img
+              src="https://picsum.photos/500/350?4"
+              alt="AI filmmaking tools"
+            />
+            <div class="blog-content">
+              <span class="category-tag">AI</span>
+              <h3>AI in Film Production</h3>
+              <p>AI speeds up editing, scripting and VFX workflows.</p>
+              <div class="blog-footer">
+                <span>7 min read</span>
+                <a href="#">Read More →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 5 -->
+          <article class="blog-card" data-category="gaming">
+            <img
+              src="https://picsum.photos/500/350?5"
+              alt="Gaming cinema storytelling"
+            />
+            <div class="blog-content">
+              <span class="category-tag">Gaming</span>
+              <h3>Gaming Meets Cinema</h3>
+              <p>Games now use film-level storytelling techniques.</p>
+              <div class="blog-footer">
+                <span>5 min read</span>
+                <a href="#">Read More →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 6 -->
+          <article class="blog-card" data-category="tech">
+            <img
+              src="https://picsum.photos/500/350?6"
+              alt="Future multimedia technology"
+            />
+            <div class="blog-content">
+              <span class="category-tag">Future</span>
+              <h3>The Future of Multimedia</h3>
+              <p>AI, VR, cloud streaming and immersive media define future.</p>
+              <div class="blog-footer">
+                <span>9 min read</span>
+                <a href="#">Read More →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ================= TRENDING TOPICS ================= -->
+      <section class="section">
+        <div class="section-header">
+          <h2>🔥 Trending Topics</h2>
+        </div>
+
+        <div class="topics-container">
+          <span>#Marvel</span>
+          <span>#Netflix</span>
+          <span>#AI</span>
+          <span>#Cinema</span>
+          <span>#OTT</span>
+          <span>#VFX</span>
+          <span>#Gaming</span>
+        </div>
+      </section>
+
+      <!-- ================= NEWSLETTER ================= -->
+      <section class="newsletter">
+        <h2>Join MultimediaHub Community</h2>
+
+        <p>Get latest updates about movies, blogs and entertainment news.</p>
+
+        <div class="newsletter-box">
+          <input type="email" placeholder="Enter your email" />
+          <button>Subscribe</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="footer-grid">
+        <div>
+          <h3>MultimediaHub</h3>
+          <p>Explore movies, blogs, technology and entertainment.</p>
+        </div>
+
+        <div>
+          <h3>Quick Links</h3>
+          <a href="movies.html">Movies</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div>
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-x-twitter"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 MultimediaHub | All Rights Reserved
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+
+    <!-- FILTER SCRIPT -->
+    <script>
+      document.querySelectorAll(".filter-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document
+            .querySelectorAll(".filter-btn")
+            .forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+
+          const category = btn.dataset.category;
+
+          document.querySelectorAll(".blog-card").forEach((card) => {
+            const match =
+              category === "all" || card.dataset.category === category;
+            card.style.display = match ? "block" : "none";
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

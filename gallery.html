@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <title>Gallery | MultimediaHub</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <i class="fa-solid fa-film"></i>
+          <span>MultimediaHub</span>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="movies.html">Movies</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a class="active" href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button id="themeBtn" class="theme-btn">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <button class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="gallery-hero">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <span class="hero-tag"> Multimedia Collection </span>
+
+        <h1>Explore the World of Entertainment</h1>
+
+        <p>
+          Discover cinematic posters, movie stills, behind-the-scenes moments,
+          fan art, and iconic scenes from around the world.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= FILTER BUTTONS ================= -->
+
+    <section class="gallery-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+
+      <button class="filter-btn" data-filter="movies">Movies</button>
+
+      <button class="filter-btn" data-filter="posters">Posters</button>
+
+      <button class="filter-btn" data-filter="actors">Actors</button>
+
+      <button class="filter-btn" data-filter="events">Events</button>
+
+      <button class="filter-btn" data-filter="behind-scenes">
+        Behind Scenes
+      </button>
+    </section>
+
+    <!-- ================= GALLERY GRID ================= -->
+
+    <section class="gallery-section">
+      <div class="gallery-grid">
+        <!-- Image Card 1 -->
+        <div class="gallery-card movies">
+          <img src="https://picsum.photos/600/800?1" alt="Movie Image" />
+
+          <div class="gallery-overlay">
+            <h3>Interstellar Collection</h3>
+
+            <p>
+              Explore breathtaking scenes from one of the greatest science
+              fiction films.
+            </p>
+
+            <button class="view-btn">
+              <i class="fa-solid fa-expand"></i>
+              View
+            </button>
+          </div>
+        </div>
+
+        <!-- Image Card 2 -->
+        <div class="gallery-card posters">
+          <img src="https://picsum.photos/600/700?2" alt="Poster" />
+
+          <div class="gallery-overlay">
+            <h3>Marvel Universe Posters</h3>
+
+            <p>Official promotional artwork from blockbuster movies.</p>
+
+            <button class="view-btn">
+              <i class="fa-solid fa-expand"></i>
+              View
+            </button>
+          </div>
+        </div>
+
+        <!-- Image Card 3 -->
+        <div class="gallery-card actors">
+          <img src="https://picsum.photos/600/900?3" alt="Actor" />
+
+          <div class="gallery-overlay">
+            <h3>Hollywood Icons</h3>
+
+            <p>Legendary actors that shaped the cinema industry.</p>
+
+            <button class="view-btn">
+              <i class="fa-solid fa-expand"></i>
+              View
+            </button>
+          </div>
+        </div>
+
+        <!-- Image Card 4 -->
+        <div class="gallery-card events">
+          <img src="https://picsum.photos/600/750?4" alt="Award Event" />
+
+          <div class="gallery-overlay">
+            <h3>Award Ceremony Moments</h3>
+
+            <p>Celebrating achievements in entertainment.</p>
+
+            <button class="view-btn">
+              <i class="fa-solid fa-expand"></i>
+              View
+            </button>
+          </div>
+        </div>
+
+        <!-- Image Card 5 -->
+        <div class="gallery-card behind-scenes">
+          <img src="https://picsum.photos/600/850?5" alt="Behind Scenes" />
+
+          <div class="gallery-overlay">
+            <h3>Behind The Scenes</h3>
+
+            <p>A look into the filmmaking process and production.</p>
+
+            <button class="view-btn">
+              <i class="fa-solid fa-expand"></i>
+              View
+            </button>
+          </div>
+        </div>
+
+        <!-- Image Card 6 -->
+        <div class="gallery-card movies">
+          <img src="https://picsum.photos/600/700?6" alt="Movie Scene" />
+
+          <div class="gallery-overlay">
+            <h3>Iconic Movie Moments</h3>
+
+            <p>Relive unforgettable cinematic experiences.</p>
+
+            <button class="view-btn">
+              <i class="fa-solid fa-expand"></i>
+              View
+            </button>
+          </div>
+        </div>
+
+        <!-- Image Card 7 -->
+        <div class="gallery-card posters">
+          <img src="https://picsum.photos/600/800?7" alt="Movie Poster" />
+
+          <div class="gallery-overlay">
+            <h3>Classic Posters</h3>
+
+            <p>Timeless artwork from classic cinema.</p>
+
+            <button class="view-btn">
+              <i class="fa-solid fa-expand"></i>
+              View
+            </button>
+          </div>
+        </div>
+
+        <!-- Image Card 8 -->
+        <div class="gallery-card actors">
+          <img src="https://picsum.photos/600/720?8" alt="Celebrity" />
+
+          <div class="gallery-overlay">
+            <h3>Celebrity Portraits</h3>
+
+            <p>Stunning portraits of global entertainment stars.</p>
+
+            <button class="view-btn">
+              <i class="fa-solid fa-expand"></i>
+              View
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STATISTICS ================= -->
+
+    <section class="gallery-stats">
+      <div class="stat-card">
+        <h2>5,000+</h2>
+        <p>Photos</p>
+      </div>
+
+      <div class="stat-card">
+        <h2>800+</h2>
+        <p>Movies Covered</p>
+      </div>
+
+      <div class="stat-card">
+        <h2>250+</h2>
+        <p>Events</p>
+      </div>
+
+      <div class="stat-card">
+        <h2>100+</h2>
+        <p>Studios</p>
+      </div>
+    </section>
+
+    <!-- ================= LIGHTBOX ================= -->
+
+    <div class="lightbox" id="lightbox">
+      <span class="close-lightbox"> &times; </span>
+
+      <img id="lightbox-image" src="" alt="Preview Image" />
+
+      <div class="lightbox-controls">
+        <button id="prevBtn">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
+
+        <button id="nextBtn">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+      <div class="footer-grid">
+        <div>
+          <h3>Multimedia Blogs</h3>
+
+          <p>Discover movies, blogs, trailers and entertainment experiences.</p>
+        </div>
+
+        <div>
+          <h3>Quick Links</h3>
+
+          <a href="movies.html">Movies</a>
+          <a href="blogs.html">Blogs</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div>
+          <h3>Follow Us</h3>
+
+          <div class="social-icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-x-twitter"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2026 MultimediaHub | All Rights Reserved
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

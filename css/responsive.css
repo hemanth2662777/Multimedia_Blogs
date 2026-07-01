@@ -1,0 +1,406 @@
+/* ==========================================
+   LARGE LAPTOPS
+========================================== */
+
+@media (max-width: 1200px) {
+  .hero-content h1 {
+    font-size: 60px;
+  }
+
+  .section {
+    width: 95%;
+  }
+
+  .movie-grid,
+  .blog-grid,
+  .features {
+    gap: 25px;
+  }
+}
+
+/* ==========================================
+   LAPTOPS
+========================================== */
+
+@media (max-width: 992px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 52px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .gallery-grid {
+    columns: 3 250px;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ==========================================
+   TABLETS
+========================================== */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-actions {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .section-header h2 {
+    font-size: 32px;
+  }
+
+  .movie-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .blog-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .gallery-grid {
+    columns: 2 250px;
+  }
+
+  .features {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+/* ==========================================
+   MOBILE DEVICES
+========================================== */
+
+@media (max-width: 576px) {
+  .logo {
+    font-size: 22px;
+  }
+
+  .logo i {
+    font-size: 24px;
+  }
+
+  .nav-links {
+    gap: 12px;
+    font-size: 14px;
+  }
+
+  .hero,
+  .movies-hero,
+  .blogs-hero,
+  .gallery-hero,
+  .about-hero,
+  .contact-hero {
+    min-height: 85vh;
+    padding: 120px 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 34px;
+    line-height: 1.3;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+
+  .hero-tag {
+    font-size: 13px;
+    padding: 8px 18px;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .movie-card img {
+    height: 320px;
+  }
+
+  .blog-card img {
+    height: 220px;
+  }
+
+  .gallery-grid {
+    columns: 1;
+  }
+
+  .feature-card {
+    padding: 30px 20px;
+  }
+
+  .feature-card i {
+    font-size: 45px;
+  }
+
+  .contact-form-container {
+    width: 100%;
+  }
+
+  .input-group input,
+  .input-group textarea {
+    padding: 15px;
+  }
+}
+
+/* ==========================================
+   SMALL PHONES
+========================================== */
+
+@media (max-width: 400px) {
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .section-header h2 {
+    font-size: 26px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .movie-card img {
+    height: 280px;
+  }
+
+  .blog-card img {
+    height: 200px;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}
+
+/* ==========================================================
+   ABOUT PAGE RESPONSIVE
+========================================================== */
+
+/* ---------- Large Tablets ---------- */
+
+@media (max-width: 992px) {
+  .about-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .about-image {
+    order: -1;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+  }
+
+  .stats-section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+/* ---------- Tablets ---------- */
+
+@media (max-width: 768px) {
+  .about-hero {
+    min-height: 70vh;
+    padding: 120px 20px;
+    text-align: center;
+  }
+
+  .about-hero h1 {
+    font-size: 42px;
+    line-height: 1.3;
+  }
+
+  .about-hero p {
+    font-size: 17px;
+  }
+
+  .about-section {
+    padding: 70px 20px;
+  }
+
+  .about-text h2 {
+    font-size: 34px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+  }
+
+  .about-image img {
+    border-radius: 18px;
+  }
+
+  .features {
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  }
+
+  .stats-section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .stat-card {
+    padding: 35px 20px;
+  }
+
+  .stat-card h2 {
+    font-size: 40px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .team-card {
+    max-width: 420px;
+    margin: auto;
+  }
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 576px) {
+  .about-hero {
+    min-height: 65vh;
+    padding: 100px 15px;
+  }
+
+  .about-hero h1 {
+    font-size: 32px;
+  }
+
+  .about-hero p {
+    font-size: 15px;
+  }
+
+  .hero-tag {
+    font-size: 12px;
+    padding: 8px 18px;
+  }
+
+  .about-section {
+    padding: 60px 15px;
+    gap: 40px;
+  }
+
+  .about-text h2 {
+    font-size: 28px;
+  }
+
+  .about-text p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .about-image img {
+    border-radius: 15px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    padding: 35px 20px;
+  }
+
+  .stats-section {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .stat-card {
+    padding: 28px;
+  }
+
+  .stat-card h2 {
+    font-size: 34px;
+  }
+
+  .team-card {
+    padding: 25px;
+  }
+
+  .team-card img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* ---------- Small Phones ---------- */
+
+@media (max-width: 400px) {
+  .about-hero h1 {
+    font-size: 28px;
+  }
+
+  .about-text h2 {
+    font-size: 24px;
+  }
+
+  .team-card img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .stat-card h2 {
+    font-size: 30px;
+  }
+}
